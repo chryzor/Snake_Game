@@ -28,9 +28,17 @@ public class GamePanel extends JPanel implements ActionListener {
     int appleX;
     // Y cordinates for the y position
     int appleY;
-    char direction = 'R'
+    char direction = 'R';
+    boolean running = false;
+    Timer timer;
+    Random random;
+
+
 
     GamePanel(){
+        random = new Random();
+        // The set of Dimension
+        this.setPreferredSize(new Dimension(SCREEN_WIDTH, SCREEN_HEIGHT));
 
     }
     public void startGame(){
