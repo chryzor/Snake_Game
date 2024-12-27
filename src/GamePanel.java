@@ -20,8 +20,15 @@ public class GamePanel extends JPanel implements ActionListener {
     final int x[] = new int[GAME_UNITS];
     // Hold all Y cordinates for the game
     final int y[] = new int[GAME_UNITS];
-
-
+    // Inital amounnt of body for the snake
+    int bodyParts = 6;
+    // To check the amount of apples being eaten
+    int applesEaten;
+    // X cordinates of where the apples are located
+    int appleX;
+    // Y cordinates for the y position
+    int appleY;
+    char direction = 'R'
 
     GamePanel(){
 
