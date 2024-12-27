@@ -12,8 +12,4 @@ public class GameFrame extends JFrame {
         this.setLocationRelativeTo(null);
     }
 
-    @Override
-    public int getWidth() {
-        return super.getWidth();
-    }
 }
